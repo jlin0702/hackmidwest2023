@@ -14,7 +14,7 @@ Ensure you have reviewed the [Rules & FAQ](https://hackmidwest.com/#faq)
 ## Who's on your team?
 *List the full names,  email address & Github username of your teammates*
 
-1.   **Full Name**  || **fullname@company.com**  (or fullname@school.edu if you're a CS student) || **Github Username**
+1.   **Kaitlyn Nordberg**  || **kaitlyn.nordberg@ku.edu** || **@Katie-N**
 2. 
 3.
 4.
@@ -34,13 +34,13 @@ Ensure you have reviewed the [Rules & FAQ](https://hackmidwest.com/#faq)
 
 ## What challenges are you building for? SELECT ALL THAT APPLY
 *See hackmidwest.com/#prizes for challenge details*
-- [ ]  Pinata Web3 Challenge
-- [ ]  Pinata Challenge
-- [ ]  Pinata ERC-6551 Challenge
-- [ ]  Okta Challenge
+- [X]  Pinata Web3 Challenge
+- [X]  Pinata Challenge
+- [X]  Pinata ERC-6551 Challenge
+- [X]  Okta Challenge
 - [ ]  GEHA Generative AI Emergency Response Challenge
 - [ ]  Corporate Challenge (only for official company teams)
-- [ ]  College Challenge (only for teams of up to 5 CS students from the same school)
+- [X]  College Challenge (only for teams of up to 5 CS students from the same school)
 
 <br /><br />
 
