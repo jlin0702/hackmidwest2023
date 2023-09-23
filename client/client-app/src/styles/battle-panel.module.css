@@ -46,7 +46,6 @@ b {
 
 .actionsContainer {
     flex: 1;
-    /* max-width: 25em; */
     padding: 1em;
 }
 
@@ -61,7 +60,7 @@ b {
 
 .buttonsGrid1x3 {
     display: grid;
-    grid-template-columns: repeat(1,20em);
+    grid-template-columns: repeat(1,12em);
     grid-template-rows: repeat(3, 3.25em);
     column-gap: 0.5em;
     row-gap: 0.5em;
