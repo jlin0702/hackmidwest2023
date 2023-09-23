@@ -1,0 +1,14 @@
+.log {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--panel-border);
+    border-width: 1.5px;
+    background-color: var(--panel-grey);
+    height: 11em;
+    overflow-y: scroll;
+}
+
+p {
+    margin: 0;
+    padding: 0.35em;
+}

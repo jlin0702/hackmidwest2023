@@ -1,0 +1,76 @@
+.panelContainer {
+    display: flex;
+
+    /* width: 80%; */
+    border-radius: 0.5em;
+    border-width: 2px;
+    border-style: solid;
+    /* border-color: panel-border; */
+    border-color: var(--panel-border);
+    /* width: 800px; */
+    /* width: 1200px; */
+    width: fit-content;
+    margin-left: 400px;
+}
+
+b {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
+
+.panelButton, .surrenderButton {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    text-align: left;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 10px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.panelButton {
+    background-color: var(--panel-grey);
+    border-color: var(--panel-border);
+}
+
+.surrenderButton {
+    background-color: var(--health-bar-red);
+    border-color: var(--health-bar-red);
+    color: white;
+}
+
+.actionsContainer {
+    flex: 1;
+    /* max-width: 25em; */
+    padding: 1em;
+}
+
+.buttonGrid2x3 {
+    display: grid;
+    grid-template-columns: repeat(2,12em);
+    grid-template-rows: repeat(3, 3.25em);
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+    padding-top: 0.2em;
+}
+
+.buttonsGrid1x3 {
+    display: grid;
+    grid-template-columns: repeat(1,20em);
+    grid-template-rows: repeat(3, 3.25em);
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+    padding-top: 0.2em;
+
+}
+
+.logContainer {
+    width: 20em;
+    margin: 1em;
+    overflow-y: scroll;
+}
