@@ -38,8 +38,11 @@ function NameTag (props) {
     });
 
     props.socket.on("game-state", (gameState) => {
-        console.log(gameState); // world
-        
+        let playerIndex = getPlayerIndex(gameState);
+        let pHp = gameState[playerIndex].activeMonster.hp;
+        let oHp = gameState[(playerIndex+1)%2].activeMonster.hp;
+        setOppHp(oHp);
+        setPlayerHp(pHp);
     });
 
     return (

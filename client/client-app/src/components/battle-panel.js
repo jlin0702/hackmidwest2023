@@ -39,18 +39,21 @@ function BattlePanel (props) {
 
     return (
         <div className={styles.panelContainer}>
-            {/* <p>Howdy</p> */}
             <div id={'CreatureActionsContainer'} className={styles.actionsContainer}>
                 <b>Creature Actions</b>
                 <div className={styles.buttonGrid2x3}>
                     {loading === true ? (
                         <p>Loading...</p>
                     ) : (
-                        actions.map((action, i)=> (
-                            <button className={styles.panelButton} onClick={()=>creatureActionHandler(i,props.socket, props.id)} key={`action_${i}`}>
-                                {`test${action.name}`}
-                            </button>
-                        ))
+                        actions.map((action, i)=> {
+                            if (action.name !== "") {
+                                return (
+                                    <button className={styles.panelButton} onClick={()=>creatureActionHandler(i,props.socket, props.id)} key={`action_${i}`}>
+                                        {`${action.name}`}
+                                    </button>
+                                )
+                            }
+                        })
                     )}
                     
                     {/* <button className={styles.panelButton} onClick={()=>creatureActionHandler(0,props.socket, props.id)}>{actions[0].name}</button>
