@@ -61,12 +61,20 @@
     -webkit-text-stroke-color: #040087;
   }
 
-  p, li, span {
-    color: white;
+  .homepage-p {
+    color:white;
+    font-family: Courier;
   }
 
-  p, li {
+  .homepage-li {
+    color: white;
     font-family: Courier;
+  }
+
+  .homepage-span {
+    color: white;
+    font-size: 1.25em;
+    font-family: 'Press Start 2P', Courier;
   }
 
   .content {
@@ -76,10 +84,5 @@
 
   .aboutUs {
     font-size: 2em;
-    font-family: 'Press Start 2P', Courier;
-  }
-
-  span {
-    font-size: 1.25em;
     font-family: 'Press Start 2P', Courier;
   }
