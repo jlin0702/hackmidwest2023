@@ -14,7 +14,12 @@
                 "accuracy": 1,
                 "evasion" : 1,
                 "actions": [
-                    { "action0" : "effect" },
+                    { 
+                        "name" : "",
+                        "type" : "",
+                        "effect" : "",
+                        "value": ""
+                    },
                     { "action1" : "effect" },
                     { "action2" : "effect" },
                     { "action3" : "effect" },
