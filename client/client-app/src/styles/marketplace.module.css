@@ -1,0 +1,80 @@
+.page {
+  background-image: url(/public/marketbackground.jpg), linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 1));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.container div {
+  padding: 1em;
+  border: 2px solid black;
+  max-width: 25%;
+  margin: 1em;
+  background-color: white;
+}
+
+.list {
+  list-style: none;
+  /* max-width: 25%; */
+}
+
+.container img {
+  max-width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container button {
+  width: 100%;
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 0.5em;
+  font-family: 'Press Start 2P', Courier;
+  font-size: 1.5em;
+}
+
+.container button:hover {
+  background-color: #dedfe0;
+  transform: translate(0, -10px);
+  transition-duration: 0.5s;
+}
+
+.container p {
+  font-size: 1.5em;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  font-family: Courier;
+}
+
+.container li {
+  font-size: 1.25em;
+  font-family: Courier;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Press Start 2P', Courier;
+  font-size: 5em;
+  margin: .5em;
+}
+
