@@ -9,7 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@alch/alchemy-web3": "^1.4.7",
     "cors": "^2.8.5",
+    "ethereumjs-util": "^7.1.5",
+    "ethers": "^6.7.1",
     "express": "^4.18.2"
   }
 }
