@@ -10,17 +10,28 @@ function NameTag () {
                 <div className={styles.playerPanel}>
                     <span className={styles.panelContent}>
                         <p className={styles.hpText}>XXX / YYY</p>
-                        <ProgressBar >
-                            <ProgressBar className={styles.remainingHealth} now={90} key={1} />
-                            <ProgressBar className={styles.missingHealth} now={10} key={2} />
-                        </ProgressBar>
+                        <div className={styles.healthBar}>
+                            <ProgressBar >
+                                <ProgressBar className={styles.remainingHealth} now={90} key={1} />
+                                <ProgressBar className={styles.missingHealth} now={10} key={2} />
+                            </ProgressBar>
+                        </div>
+                        
                     </span>
                 </div>
             </div>
             <div className={styles.opponentWrapper}>
                 <b>Creature Name</b>
                 <div className={styles.opponentPanel}>
-                    <p>XXX / YYY</p>
+                <span className={styles.panelContent}>
+                        <p className={styles.hpText}>XXX / YYY</p>
+                        <div className={styles.healthBar}>
+                            <ProgressBar >
+                                <ProgressBar className={styles.remainingHealth} now={90} key={1} />
+                                <ProgressBar className={styles.missingHealth} now={10} key={2} />
+                            </ProgressBar>
+                        </div>
+                    </span>
                 </div>
             </div>
         </div>

@@ -7,7 +7,7 @@
     border-radius: 10px;
     border: 1.5px solid var(--panel-border);
     background: var(--panel-grey);
-    width: 15em;
+    width: 18em;
     height: 3.25em;
 }
 
@@ -46,9 +46,27 @@ b {
 }
 
 .remainingHealth {
-    background-color: var(--health-bar-green);
+    background-color: var(--health-bar-green) !important;
 }
 
 .missingHealth {
-    background-color: var(--health-bar-red);
+    background-color: var(--health-bar-red) !important;
+}
+
+.healthBar {
+    width: 60%;
+    position: absolute;
+    top: 58%;
+    left: 35%;
+    margin: auto;
+
+}
+
+.bg-REMAINING_HEALTH {
+    background-color: var(--health-bar-green) !important;
+}
+
+.bg-test {
+    background-color: black;
+    color: black;
 }
