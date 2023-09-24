@@ -1,0 +1,54 @@
+.wrapper {
+    position: relative;
+}
+
+.playerPanel, .opponentPanel {
+    /* display: inline-block; */
+    border-radius: 10px;
+    border: 1.5px solid var(--panel-border);
+    background: var(--panel-grey);
+    width: 15em;
+    height: 3.25em;
+}
+
+.playerWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.opponentWrapper {
+    position: absolute;
+    top: 21em;
+    right: 6em;
+}
+
+b {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
+
+.panelContent{
+    margin: 0;
+    line-height: 3.25em;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.hpText{
+    padding: 0;
+    padding-left: 0.5em;
+    margin: 0;
+    display: inline;
+    float: left;
+}
+
+.remainingHealth {
+    background-color: var(--health-bar-green);
+}
+
+.missingHealth {
+    background-color: var(--health-bar-red);
+}
