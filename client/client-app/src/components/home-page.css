@@ -1,16 +1,85 @@
+.page {
+  /* background-image: url(/public/homepage.png);
+  background-size: cover; */
+  background-color: #779ff6;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
 .clickableDiv {
-    width: 200px;
-    height: 100px;
+    /* min-width: fit-content; */
+    /* padding: 1em; */
+    max-width: 80%;
+    /* height: 100px; */
+    border-radius: 0.5em;
+    border: 4px solid black;
     background-color: #eaeaea;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    text-align: center;
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
+    padding: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline-block;
   }
-  
+
+  .clickableDiv h3 {
+    font-family: 'Press Start 2P';
+    color: red;
+  }
+
+  .clickableDiv p {
+    margin: 0;
+    font-family: Courier;
+    color: black;
+  }
+
   .clickableDiv:hover {
     background-color: #c4c4c4;
+    transition: 0.5s;
+  }
+
+  .menuItem a {
+    display: inline;
+    text-decoration: none;
+  }
+
+  .title {
+    font-family: 'Press Start 2P', Courier;
+    font-size: 4em;
+    text-align: center;
+    margin: 1em;
+    color: #f7a600;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #040087;
+  }
+
+  p, li, span {
+    color: white;
+  }
+
+  p, li {
+    font-family: Courier;
+  }
+
+  .content {
+    font-size: 2em;
+    padding: 2em;
+  }
+
+  .aboutUs {
+    font-size: 2em;
+    font-family: 'Press Start 2P', Courier;
+  }
+
+  span {
+    font-size: 1.25em;
+    font-family: 'Press Start 2P', Courier;
   }
