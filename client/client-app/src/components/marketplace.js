@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export default function Marketplace() {
+export default function Marketplace(props) {
   const [wallets, setWallets] = useState(['0x3007888b21fB635B9029E21E958C2c1C460e5d0a']);
   const [items, setItems] = useState([]);
 
