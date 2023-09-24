@@ -1,21 +1,18 @@
-import React from 'react';
 import './home-page.css';
-import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function HomePage() {
-  const navigate = useNavigate();
-
   const handleBattleClick = () => {
     const walletKey = window.prompt('Please enter your public wallet key:');
     if (walletKey) {
-      navigate('/battle');
+      window.location.href = `/battle?walletKey=${encodeURIComponent(walletKey)}`;
     }
   };
 
   const handleMarketplaceClick = () => {
     const walletKey = window.prompt('Please enter your public wallet key:');
     if (walletKey) {
-      navigate('/marketplace');
+      window.location.href = `/marketplace?walletKey=${encodeURIComponent(walletKey)}`;
     }
   };
 
