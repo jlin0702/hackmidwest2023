@@ -47,8 +47,8 @@ export default function Marketplace() {
       <div className={styles.container}>
       {items.map((item) => (
         <div key={item.contract}>
-          <p style={{fontFamily: 'Press Start 2P'}}>Name: {item.name}</p>
-          <p>Contract: {item.contract}</p>
+          <p>Name: {item.name}</p>
+          <p style={{fontSize: 1.25 + 'em'}}>Contract: {item.contract}</p>
           <img src={`https://maroon-active-mole-538.mypinata.cloud/ipfs/${item.metadataData.image.substring('ipfs://'.length)}?pinataGatewayToken=0Z0L_3214TvRqWPDl9_hwFjZsn-kI0q5pOvTduLkiOjrBWoxlZpr1bHkxU0-O9KE`} alt="Item Image" />
           <p>Moves</p>
           <ul className={styles.list}>
