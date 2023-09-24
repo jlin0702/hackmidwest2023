@@ -1,7 +1,16 @@
 import './home-page.css';
 import { Link } from 'react-router-dom';
 
+import useSound from 'use-sound';
+import marketSound from '../market.mp3';
+import battleSound from '../battle.mp3';
+
 export default function HomePage() {
+  const battleSoundUrl = battleSound;
+  const marketSoundUrl = marketSound;
+  const [playBattle] = useSound(battleSound);
+  const [playMarket] = useSound(marketSound);
+
   const handleBattleClick = () => {
     const walletKey = window.prompt('Please enter your public wallet key:');
     if (walletKey) {
@@ -22,7 +31,7 @@ export default function HomePage() {
         <h1 className="title">PokeNFT</h1>
         <div className="menuItem">
         <Link to="/battle">
-          <div className="clickableDiv" onClick={handleBattleClick}>
+          <div className="clickableDiv" onClick={handleBattleClick} onMouseEnter={playBattle}>
             <h3>Battle</h3>
             <p className="homepage-p">Think you have what it takes to win? We'll see about that. Bring your best fighters and compete against real people. But be careful, if you lose, your fighter will be transfered to your opponent!</p>
           </div>
@@ -30,7 +39,7 @@ export default function HomePage() {
         </div>
         <div className="menuItem">
         <Link to="/marketplace">
-          <div className="clickableDiv" onClick={handleMarketplaceClick}>
+          <div className="clickableDiv" onClick={handleMarketplaceClick} onMouseEnter={playMarket}>
             <h3>Marketplace</h3>
             <p className="homepage-p">Ready to expand your roster? Or maybe you're ready for your very first friend/fighter. Get your very own fighter NFT, items and powerups right here at the Marketplace.</p>
           </div>
