@@ -15,20 +15,20 @@ Ensure you have reviewed the [Rules & FAQ](https://hackmidwest.com/#faq)
 *List the full names,  email address & Github username of your teammates*
 
 1.   **Kaitlyn Nordberg**  || **kaitlyn.nordberg@ku.edu** || **@Katie-N**
-2. 
-3.
-4.
+2.   **Jacky Lin**  || **lin.jacky@ku.edu** || **@jlin0702**
+3.   **Elen Bhattarai**  || **elenbhattarai2002@ku.edu** || **@ElenBhattarai**
+4.   **James Hanselman** || **jameshanselmaniv@ku.edu** || **@JamesHansIV**
 5.
 
 <br /><br />
 
 
 ## What is the name of your App?
-
+NFTmon Exchange
 <br /><br />
 ## What does your app do?
 *Describe in a paragraph or so*
-
+Welcome to the captivating world of "NFTmon Exchange!" Our app lets you trade digital monsters as NFTs and make them battle. The content and metadata is uploaded to Pinata, then NFTs are minted through deploying smart contracts. The NFTs are hosted on opensea and using Coinbase Wallet.
 <br /><br />
 
 
@@ -36,8 +36,8 @@ Ensure you have reviewed the [Rules & FAQ](https://hackmidwest.com/#faq)
 *See hackmidwest.com/#prizes for challenge details*
 - [X]  Pinata Web3 Challenge
 - [X]  Pinata Challenge
-- [X]  Pinata ERC-6551 Challenge
-- [X]  Okta Challenge
+- [ ]  Pinata ERC-6551 Challenge
+- [ ]  Okta Challenge
 - [ ]  GEHA Generative AI Emergency Response Challenge
 - [ ]  Corporate Challenge (only for official company teams)
 - [X]  College Challenge (only for teams of up to 5 CS students from the same school)
