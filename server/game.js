@@ -263,7 +263,7 @@ function buildGameStatePacket() {
                 hp: players[1].activeMonster.hp,
                 type: players[1].activeMonster.type
             },
-            img:players[0].img
+            img:players[1].img
         }
     ]
     console.log(state);

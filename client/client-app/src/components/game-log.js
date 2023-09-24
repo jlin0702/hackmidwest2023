@@ -22,7 +22,7 @@ function GameLog(props) {
     return(
         <div className={styles.wrapper}>
             <div className={styles.log}>
-                {messages.map((item, i)=> (<p className={styles.message} key={`message_${i}`}>{`{${i}} : ${item}`}</p>))}
+                {messages.reverse().map((item, i)=> (<p className={styles.message} key={`message_${i}`}>{`{${messages.length -i}} : ${item}`}</p>))}
             </div>
         </div>  
     );
