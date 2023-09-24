@@ -1,0 +1,11 @@
+{
+    "activePlayer" : 0,
+    "action" : {
+        "name" : "",
+        "message": ""
+    },
+    "player0" : {
+        "id" : "",
+        "activeMonster" : ""
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "activePlayer" : 0,
+    "gameOver" : 0,
+    "winner" : -1,
+    "player0" : {
+        "id" : "",
+        "activeMonster" : "", 
+        "lineup" : [
+            {
+                "id" : "",
+                "name" : "",
+                "hp" : 1,
+                "element" : "elementType",
+                "accuracy": 1,
+                "evasion" : 1,
+                "actions": [
+                    { 
+                        "name" : "",
+                        "type" : "",
+                        "effect" : "",
+                        "value": ""
+                    },
+                    { "action1" : "effect" },
+                    { "action2" : "effect" },
+                    { "action3" : "effect" },
+                    { "action4" : "effect" },
+                    { "action5" : "effect" }
+                ]
+            }
+        ],
+        "items" : [
+            {"id":"","name":"","effect":""},
+            {"id":"","name":"","effect":""}
+        ]
+    },
+    "player1" : {
+        "id" : "",
+        "activeMonster" : "", 
+        "lineup" : [
+            {
+                "id" : "",
+                "name" : "",
+                "hp" : 1,
+                "element" : "elementType",
+                "accuracy": 1,
+                "evasion" : 1,
+                "actions": [
+                    { "action0" : "effect" },
+                    { "action1" : "effect" },
+                    { "action2" : "effect" },
+                    { "action3" : "effect" },
+                    { "action4" : "effect" },
+                    { "action5" : "effect" }
+                ]
+            }
+        ],
+        "items" : [
+            {"id":"","name":"","effect":""},
+            {"id":"","name":"","effect":""}
+        ]
+    }
+}

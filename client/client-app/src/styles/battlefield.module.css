@@ -6,24 +6,30 @@
 .playerBase, .opponentBase {
     height: 10em;
     width: 30em;
-    border-radius: 50%;
-    border-color: var(--panel-border);
     border-width: 2px;
+    border-radius: 50%;
     border-style: solid;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.playerBase {
+.playerBase, .playerBaseActive {
     position:relative;
     top: 60%;
-    /* border-color: var(--panel-border); */
-    /* left: 4em; */
-    /* left: 100px; */
+    border-color: var(--panel-border);
 }
 
-.opponentBase {
+.playerBaseActive, .opponentBaseActive {
+    border-width: 10px;
+    height: 10em;
+    width: 30em;
+    border-radius: 50%;
+    border-style: solid;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.opponentBase, .opponentBaseActive {
     position: relative;
-    /* border-color: red; */
+    border-color: var(--health-bar-red);
     top: -0%;
     left: 60%;
 }
