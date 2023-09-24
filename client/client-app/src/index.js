@@ -11,6 +11,14 @@ root.render(
   </React.StrictMode>
 );
 
+const Home = ({ username, setUsername, room, setRoom, socket }) => {
+  return (
+    socket.emit("lklk")
+  );
+};
+
+export default Home;
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
