@@ -15,8 +15,8 @@ const io = new Server(server, {cors: {origin: "*"}});
 
 // player connection
 io.on('connection', (socket) => {
-    socket.on("connect-to-game", (id)=> {
-       playerJoin(id);
+    socket.on("connect-to-game", (nft, id)=> {
+       playerJoin(nft, id);
     })
 });
 
@@ -88,7 +88,7 @@ let players = [
     }
 ]
 
-function playerJoin (id) {
+function playerJoin (nft, id) {
     // determine who is joining
     let player = {};
     if (numPlayersJoined === 0) {
@@ -100,10 +100,26 @@ function playerJoin (id) {
         return;
     }
 
+    try {
+        player.id = id;
+        player.activeMonster.name = nft.metadataData.name;
+        player.activeMonster.hp = nft.metadataData.hp;
+        player.activeMonster.type = nft.metadataData.type;
+        player.activeMonster.action0 = nft.metadataData.action0;
+        player.activeMonster.action1 = nft.metadataData.action1;
+        player.activeMonster.action2 = nft.metadataData.action2;
+        player.activeMonster.action3 = nft.metadataData.action3;
+        player.activeMonster.action4 = nft.metadataData.action4;
+        player.activeMonster.action5 = nft.metadataData.action5;
+    } catch (e) {
+        console.log("ERROR mapping: ", e);
+        return;
+    }
     // set id
-    player.id = id;
+    
 
     // get lineup 
+
 
     // get items
 

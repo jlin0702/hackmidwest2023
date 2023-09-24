@@ -33,3 +33,9 @@
     top: -0%;
     left: 60%;
 }
+
+.image{
+    position: absolute;
+    bottom: 55%;
+    left: 22%;
+}
