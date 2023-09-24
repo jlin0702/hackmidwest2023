@@ -23,6 +23,10 @@ io.on('connection', (socket) => {
     })
 });
 
+// io.on('connection', (socket) => {
+//     socket
+// });
+
 // creature action handler
 io.on('connection', (socket) => {
     socket.on("creature-action", (action, id)=> {
@@ -162,6 +166,7 @@ function playerJoin (nft, id) {
         player.activeMonster.action3 = nft.metadataData.action3;
         player.activeMonster.action4 = nft.metadataData.action4;
         player.activeMonster.action5 = nft.metadataData.action5;
+        player.img = nft.metadataData.image;
     } catch (e) {
         console.log("ERROR mapping: ", e);
         return;
@@ -240,6 +245,7 @@ function handleAction(action, id) {
 }
 
 function buildGameStatePacket() {
+
     const state = [
         {
             id : players[0].id,  
@@ -247,7 +253,8 @@ function buildGameStatePacket() {
                 name: players[0].activeMonster.name,
                 hp: players[0].activeMonster.hp,
                 type: players[0].activeMonster.type
-            }
+            },
+            img: players[0].img
         },
         {
             id : players[1].id,  
@@ -255,7 +262,8 @@ function buildGameStatePacket() {
                 name: players[1].activeMonster.name,
                 hp: players[1].activeMonster.hp,
                 type: players[1].activeMonster.type
-            }
+            },
+            img:players[0].img
         }
     ]
     console.log(state);
@@ -275,6 +283,7 @@ function runGame (startingState) {
     // select starting player
     activePlayer = (Math.floor(Math.random() * 2));
 
+    // io.sockets.emit("opp-img-src", )
     io.sockets.emit("game-start", startingState);
     io.sockets.emit("active-player", players[activePlayer].id);
     io.sockets.emit("starting-player", players[activePlayer].id);

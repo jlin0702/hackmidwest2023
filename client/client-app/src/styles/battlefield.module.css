@@ -36,6 +36,11 @@
 
 .image{
     position: absolute;
-    bottom: 55%;
+    bottom: 54%;
     left: 22%;
+}
+.imageOpp{
+    position: absolute;
+    bottom: 65%;
+    left: 65%;
 }
