@@ -1,9 +1,8 @@
-
 import NameTag from './name-tag.js'
 import styles from '../styles/battlefield.module.css';
 
 
-function Battlefield() {
+function Battlefield(props) {
     return (
         <div className={styles.container}>
             <NameTag/>

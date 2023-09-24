@@ -1,0 +1,16 @@
+.clickableDiv {
+    width: 200px;
+    height: 100px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .clickableDiv:hover {
+    background-color: #c4c4c4;
+  }
