@@ -27,7 +27,7 @@ Ensure you have reviewed the [Rules & FAQ](https://hackmidwest.com/#faq)
 NFTmon Exchange
 <br /><br />
 ## What does your app do?
-*Describe in a paragraph or so*
+<br />
 Welcome to the captivating world of "NFTmon Exchange!" Our app lets you trade digital monsters as NFTs and make them battle. The content and metadata is uploaded to Pinata, then NFTs are minted through deploying smart contracts. The NFTs are hosted on opensea and using Coinbase Wallet.
 <br /><br />
 
