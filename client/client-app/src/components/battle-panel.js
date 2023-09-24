@@ -5,6 +5,8 @@ import styles from '../styles/battle-panel.module.css';
 
 import GameLog from './game-log.js';
 
+import Tooltip from '@mui/material/Tooltip';
+
 function creatureActionHandler (action, socket, id) {
     console.log("click handler");
     socket.emit("creature-action",action,id);
@@ -48,9 +50,11 @@ function BattlePanel (props) {
                         actions.map((action, i)=> {
                             if (action.name !== "") {
                                 return (
-                                    <button className={styles.panelButton} onClick={()=>creatureActionHandler(i,props.socket, props.id)} key={`action_${i}`}>
-                                        {`${action.name}`}
-                                    </button>
+                                    <Tooltip title={<h4>{action.effect}</h4>} placement="top">
+                                        <button className={styles.panelButton} onClick={()=>creatureActionHandler(i,props.socket, props.id)} key={`action_${i}`}>
+                                            {`${action.name}`}
+                                        </button>
+                                    </Tooltip>
                                 )
                             }
                         })
